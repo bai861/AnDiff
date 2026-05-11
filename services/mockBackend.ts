@@ -1,5 +1,5 @@
 import { AntibodySequence, GenerationMode } from '../types';
-import { API_BASE_URL } from '../constants';
+import { API_BASE_URL, DEFAULT_MOTIF } from '../constants';
 
 const HUMAN_FR_RESIDUES = ['V', 'Q', 'L', 'E', 'S', 'G', 'P', 'A', 'R', 'T', 'I', 'Y', 'W', 'F', 'D', 'K', 'N'];
 const CDR_BIASED_RESIDUES = ['Y', 'S', 'G', 'T', 'D', 'N', 'A', 'R', 'W', 'F'];
@@ -11,8 +11,7 @@ const mutateResidue = (fixed: string, mode: GenerationMode, index: number) => {
 };
 
 const normalizeSeed = (seedSequence?: string) => {
-  const fallback = 'EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVSAISGSGGSTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAK#######WGQGTQVTVSS';
-  return (seedSequence || fallback).replace(/\s/g, '').toUpperCase();
+  return (seedSequence || DEFAULT_MOTIF).replace(/\s/g, '').toUpperCase();
 };
 
 export const generateAntibodies = async (

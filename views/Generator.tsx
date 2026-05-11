@@ -30,7 +30,7 @@ export const Generator: React.FC = () => {
         <div>
           <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
             <Dna className="text-science-600" />
-            Antibody Generator
+            Nanobody Generator
           </h1>
           <p className="text-slate-500">
             Humanize nanobody frameworks from CDR input using AnDiff autoregressive adaptive diffusion.

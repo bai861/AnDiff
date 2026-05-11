@@ -10,7 +10,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeView, onNavigate }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'training', label: 'Model Training', icon: Database },
-    { id: 'generator', label: 'Antibody Generator', icon: Dna },
+    { id: 'generator', label: 'Nanobody Generator', icon: Dna },
     { id: 'analysis', label: 'Analysis', icon: BarChart2 },
   ];
 

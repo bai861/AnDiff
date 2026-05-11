@@ -20,4 +20,4 @@ export const AVAILABLE_SCORERS = [
   { id: ScorerType.FR2, name: 'FR2 Key Residue Lock', description: 'Preserves nanobody residues that support CDR conformation and binding.' },
 ];
 
-export const DEFAULT_MOTIF = "EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVSAISGSGGSTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAK#######WGQGTQVTVSS";
+export const DEFAULT_MOTIF = "EVQLVESGGGLVQPGGSLRLSC#######YAMSWVRQAPGKGLEWVSA";
