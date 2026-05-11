@@ -1,0 +1,5 @@
+{
+  "name": "AnDiff Workbench",
+  "description": "A template-free nanobody humanization platform based on autoregressive adaptive diffusion.",
+  "requestFramePermissions": []
+}
